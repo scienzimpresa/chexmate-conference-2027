@@ -1,27 +1,20 @@
-CHEX-MATE CONFERENCE 2027 — MULTI-PAGE DESIGN DEMO
-================================================
+CHEX-MATE CONFERENCE — DEMO HOMEPAGE
+====================================
 
-Open index.html in your browser to preview the complete static site.
+This folder contains a one-page conference homepage prototype based on
+"Arcana" by HTML5 UP.
 
-PAGES
-- index.html          Existing homepage (preserved) with working navigation
-- participants.html   New page with placeholder speaker profiles and content
-- program.html        New page with an illustrative five-day program
-- registration.html   New page with an opening-soon state and key-date placeholders
-- venue.html          Existing venue details, with unified navigation
+Files changed/added for the demo:
+- index.html
+- assets/css/chexmate.css
 
-GRAPHIC DIRECTION
-- Dark indigo/violet hero banners with a subtle cluster-image texture
-- Cyan accent details and concentric orbital motifs, built with CSS
-- Wide typography, small uppercase section markers, airy white surfaces
-- Speaker cards / day-by-day timeline / registration status cards
-- Reuse the original venue photograph, but preserve a gradient fallback
+The original Arcana stylesheet and JavaScript files are kept untouched.
+The original license is included as LICENSE.txt.
 
-All sample speaker names, session items, timing and filler text are clearly
-placeholders. The program and registration forms are NOT live. Dates and
-venue reflect the supplied demo and should be independently verified before
-publication. Existing assets and HTML5 UP license are preserved.
+Important:
+- Conference dates and venue are placeholders.
+- LOC and SOC names are fictional placeholders for layout testing.
+- Project facts used in the intro are based on public CHEX-MATE/INAF material.
 
-Files edited: index.html, venue.html, assets/js/main.js
-Files added: participants.html, program.html, registration.html,
-             assets/css/inner-pages.css
+To preview:
+Open index.html in a browser.

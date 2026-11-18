@@ -1173,3 +1173,308 @@ header.major p {
 		padding-bottom: 3rem;
 	}
 }
+
+
+/* v14: simple programme / participants pages */
+.subpage-hero {
+	position: relative;
+	min-height: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2.5rem 1rem;
+	text-align: center;
+	color: #fff;
+	background:
+		linear-gradient(rgba(17,15,34,0.38), rgba(17,15,34,0.38)),
+		url("../../images/hero-gallery-bg.jpg") center 48% / cover no-repeat;
+}
+
+.subpage-hero h1 {
+	margin: 0;
+	color: #fff;
+	font-size: clamp(2.4rem, 5vw, 4.5rem);
+	font-weight: 500;
+	letter-spacing: -0.035em;
+	text-shadow: 0 3px 16px rgba(0,0,0,0.42);
+}
+
+.minimal-page {
+	min-height: 380px;
+	padding-top: 3.5rem;
+	padding-bottom: 4.5rem;
+}
+
+.minimal-page h2 {
+	margin-bottom: 1.5rem;
+	color: var(--chex-ink);
+}
+
+.content-tabs {
+	display: flex;
+	gap: 0;
+	margin: 0 0 3rem 0;
+	border-bottom: 1px solid var(--chex-line);
+}
+
+.content-tabs a {
+	display: inline-block;
+	padding: 0.8rem 1.25rem;
+	margin-bottom: -1px;
+	border-bottom: 3px solid transparent;
+	color: var(--chex-muted);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.content-tabs a:hover {
+	color: var(--chex-purple);
+}
+
+.content-tabs a.active {
+	color: var(--chex-purple);
+	border-bottom-color: var(--chex-purple);
+}
+
+.simple-program-block {
+	padding: 0.25rem 0 1rem 0;
+}
+
+.simple-program-block p,
+.simple-placeholder {
+	font-size: 1.08rem;
+	line-height: 1.7;
+	color: var(--chex-muted);
+}
+
+.simple-placeholder {
+	padding: 1.25rem 0;
+	border-top: 1px solid var(--chex-line);
+	border-bottom: 1px solid var(--chex-line);
+}
+
+.simple-footer-line {
+	margin: 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+	.subpage-hero {
+		min-height: 180px;
+	}
+
+	.content-tabs {
+		flex-direction: column;
+		border-bottom: 0;
+	}
+
+	.content-tabs a {
+		border-bottom: 1px solid var(--chex-line);
+	}
+
+	.content-tabs a.active {
+		border-left: 3px solid var(--chex-purple);
+		border-bottom-color: var(--chex-line);
+	}
+}
+
+
+/* v15: simple programme, participants, invited talks */
+.placeholder-note {
+	margin: 0 0 2rem 0;
+	padding: 0.75rem 1rem;
+	border-left: 3px solid var(--chex-cyan);
+	background: rgba(111,211,209,0.07);
+	color: var(--chex-muted);
+	font-size: 0.92rem;
+}
+
+.program-day {
+	margin: 0 0 3rem 0;
+}
+
+.program-day h2 {
+	margin: 0 0 0.4rem 0;
+	padding-bottom: 0.65rem;
+	border-bottom: 2px solid var(--chex-purple);
+	font-size: 1.65rem;
+}
+
+.program-row {
+	display: grid;
+	grid-template-columns: 90px 1fr;
+	gap: 1rem;
+	padding: 0.9rem 0;
+	border-bottom: 1px solid var(--chex-line);
+}
+
+.program-row time {
+	font-weight: 700;
+	color: var(--chex-purple);
+}
+
+.program-row strong,
+.program-row span {
+	display: block;
+}
+
+.program-row strong {
+	color: var(--chex-ink);
+}
+
+.program-row span {
+	margin-top: 0.18rem;
+	color: var(--chex-muted);
+	font-size: 0.94rem;
+}
+
+.program-row.break-row {
+	background: rgba(102,80,216,0.035);
+}
+
+.participant-list,
+.invited-list {
+	border-top: 1px solid var(--chex-line);
+}
+
+.participant-list > div,
+.invited-list > div {
+	padding: 0.9rem 0;
+	border-bottom: 1px solid var(--chex-line);
+}
+
+.participant-list strong,
+.participant-list span,
+.invited-list strong,
+.invited-list span,
+.invited-list small {
+	display: block;
+}
+
+.participant-list strong,
+.invited-list strong {
+	color: var(--chex-ink);
+}
+
+.participant-list span,
+.invited-list small {
+	color: var(--chex-muted);
+}
+
+.invited-list span {
+	margin: 0.15rem 0;
+	color: var(--chex-purple);
+	font-weight: 600;
+}
+
+.invited-list small {
+	font-size: 0.86rem;
+}
+
+.poster-list {
+	margin: 0;
+	padding-left: 1.7rem;
+}
+
+.poster-list li {
+	padding: 0.9rem 0 0.9rem 0.35rem;
+	border-bottom: 1px solid var(--chex-line);
+}
+
+.poster-list strong,
+.poster-list span {
+	display: block;
+}
+
+.poster-list strong {
+	color: var(--chex-ink);
+}
+
+.poster-list span {
+	margin-top: 0.2rem;
+	color: var(--chex-muted);
+	font-size: 0.9rem;
+}
+
+@media screen and (max-width: 640px) {
+	.program-row {
+		grid-template-columns: 70px 1fr;
+		gap: 0.7rem;
+	}
+}
+
+
+/* v16: uniform internal page banners */
+.subpage-hero,
+.venue-hero {
+	box-sizing: border-box;
+	min-height: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2.5rem 1rem;
+	text-align: center;
+}
+
+.venue-hero {
+	background:
+		linear-gradient(rgba(16,14,32,0.30), rgba(16,14,32,0.30)),
+		url("https://web.uniroma2.it/immagine/8608") center 52% / cover no-repeat;
+}
+
+.social-dinner-info {
+	max-width: 760px;
+	font-size: 1.05rem;
+	line-height: 1.75;
+}
+
+.social-dinner-info p {
+	margin-bottom: 0.9rem;
+}
+
+@media screen and (max-width: 640px) {
+	.subpage-hero,
+	.venue-hero {
+		min-height: 180px;
+		padding: 2rem 1rem;
+	}
+}
+
+/* v17: truly identical internal banner heights */
+.subpage-hero,
+.venue-hero {
+	height: 230px;
+	min-height: 230px;
+	max-height: 230px;
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+.venue-hero .container,
+.subpage-hero .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	.subpage-hero,
+	.venue-hero {
+		height: 180px;
+		min-height: 180px;
+		max-height: 180px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.venue-hero h1 {
+		font-size: clamp(2.4rem, 10vw, 3.4rem);
+	}
+
+	.venue-subtitle {
+		font-size: 1rem;
+	}
+}
