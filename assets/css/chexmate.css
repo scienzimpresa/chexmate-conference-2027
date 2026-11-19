@@ -1478,3 +1478,211 @@ header.major p {
 		font-size: 1rem;
 	}
 }
+
+
+/* v18: institutional logos, logistics and contacts */
+.partner-strip {
+	background: #fff;
+	border-bottom: 1px solid var(--chex-line);
+	padding: 2.1rem 1rem 1.9rem;
+}
+
+.partner-strip-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(2.2rem, 7vw, 5.5rem);
+	flex-wrap: wrap;
+}
+
+.partner-strip a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+}
+
+.partner-logo {
+	display: block;
+	width: auto;
+	object-fit: contain;
+}
+
+.partner-logo-infn {
+	height: 86px;
+}
+
+.partner-logo-inaf {
+	height: 86px;
+	max-width: 300px;
+}
+
+.route-box {
+	margin: 2rem 0 2.5rem;
+	padding: 1.6rem 1.8rem;
+	background: #fff;
+	border: 1px solid var(--chex-line);
+	border-radius: 8px;
+}
+
+.route-box h3 {
+	margin-bottom: 0.7rem;
+	color: var(--chex-ink);
+}
+
+.route-address {
+	margin-bottom: 1.35rem;
+}
+
+.route-address .icon {
+	color: var(--chex-purple);
+	margin-right: 0.35rem;
+}
+
+.route-steps {
+	display: grid;
+	gap: 0.85rem;
+}
+
+.route-steps > div {
+	display: grid;
+	grid-template-columns: 42px 1fr;
+	gap: 0.85rem;
+	align-items: start;
+	padding-top: 0.85rem;
+	border-top: 1px solid var(--chex-line);
+}
+
+.route-steps > div:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.route-letter {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: var(--chex-purple);
+	color: #fff;
+	font-weight: 800;
+}
+
+.route-steps strong {
+	display: block;
+	color: var(--chex-ink);
+	margin-bottom: 0.2rem;
+}
+
+.route-steps p {
+	margin: 0;
+}
+
+.travel-groups {
+	margin-top: 1.2rem;
+}
+
+.travel-group {
+	padding: 2rem 0;
+	border-top: 1px solid var(--chex-line);
+}
+
+.travel-group:first-child {
+	border-top: 0;
+}
+
+.travel-group h3 {
+	margin-bottom: 1rem;
+	color: var(--chex-ink);
+}
+
+.travel-group h3 .icon {
+	width: 1.8rem;
+	color: var(--chex-purple);
+}
+
+.travel-group h4 {
+	margin: 1.15rem 0 0.35rem;
+	color: var(--chex-purple);
+	font-size: 1rem;
+}
+
+.travel-group p {
+	margin-bottom: 0.75rem;
+}
+
+.travel-group ol {
+	margin: 0.5rem 0 1rem 1.25rem;
+}
+
+.contact-page {
+	background: #fff;
+}
+
+.contact-block {
+	padding: 0 0 3rem;
+}
+
+.contact-block + .contact-block {
+	padding-top: 2.5rem;
+	border-top: 1px solid var(--chex-line);
+}
+
+.contact-block h2 {
+	margin-bottom: 1.35rem;
+	color: var(--chex-ink);
+}
+
+.scienzimpresa-logo {
+	display: block;
+	width: min(100%, 620px);
+	height: auto;
+	margin: 0 0 1.8rem;
+}
+
+.contact-email {
+	font-size: 1.18rem;
+	margin: 1.1rem 0 1.8rem;
+}
+
+.contact-email .icon,
+.contact-person .icon {
+	color: var(--chex-purple);
+	margin-right: 0.55rem;
+}
+
+.contact-person {
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+	font-size: 1.18rem;
+	color: #474253;
+}
+
+.scientific-contacts .contact-person {
+	font-size: 1.28rem;
+}
+
+@media screen and (max-width: 640px) {
+	.partner-strip {
+		padding: 1.6rem 0.8rem;
+	}
+	.partner-strip-inner {
+		gap: 1.5rem;
+	}
+	.partner-logo-infn,
+	.partner-logo-inaf {
+		height: 62px;
+		max-width: 220px;
+	}
+	.route-box {
+		padding: 1.25rem 1.1rem;
+	}
+	.contact-email,
+	.contact-person,
+	.scientific-contacts .contact-person {
+		font-size: 1.02rem;
+	}
+}
