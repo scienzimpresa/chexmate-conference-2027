@@ -1686,3 +1686,233 @@ header.major p {
 		font-size: 1.02rem;
 	}
 }
+
+
+/* v20: compact programme, registration form, hotels and update stamp */
+.partner-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.7rem;
+	text-align: center;
+}
+
+.partner-logo-infn {
+	height: 120px;
+}
+
+.partner-logo-inaf {
+	height: 120px;
+	max-width: 380px;
+}
+
+.partner-caption {
+	margin: 0;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #4f4a5b;
+}
+
+.document-download {
+	margin-top: 2rem;
+}
+
+.document-download .button .icon {
+	margin-right: 0.45rem;
+}
+
+.program-accordion {
+	display: grid;
+	gap: 0.75rem;
+	margin-top: 1.5rem;
+}
+
+.program-accordion details {
+	border: 1px solid var(--chex-line);
+	border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.program-accordion summary {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem 3.2rem 1rem 1.2rem;
+	cursor: pointer;
+	list-style: none;
+	font-weight: 700;
+	color: var(--chex-ink);
+	background: #faf9fd;
+}
+
+.program-accordion summary::-webkit-details-marker {
+	display: none;
+}
+
+.program-accordion summary::after {
+	content: "+";
+	position: absolute;
+	right: 1.2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: var(--chex-purple);
+}
+
+.program-accordion details[open] summary::after {
+	content: "−";
+}
+
+.program-accordion summary strong {
+	color: var(--chex-purple);
+	font-size: 0.88rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+.accordion-content {
+	padding: 0 1.2rem 0.35rem;
+}
+
+.registration-form-page {
+	padding-top: 3.5rem;
+}
+
+.form-container {
+	max-width: 900px;
+}
+
+.google-form-wrap {
+	width: 100%;
+	margin-top: 1.5rem;
+	overflow: hidden;
+	border: 1px solid var(--chex-line);
+	border-radius: 8px;
+	background: #fff;
+}
+
+.google-form-wrap iframe {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-height: 2254px;
+	border: 0;
+}
+
+.map-embed {
+	margin: 2rem 0 0;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid var(--chex-line);
+	background: #eee;
+}
+
+.map-embed iframe {
+	display: block;
+}
+
+.hotel-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 2rem;
+	margin: 2rem 0 1rem;
+	border-top: 1px solid var(--chex-line);
+}
+
+.hotel-list > div {
+	padding: 1.25rem 0;
+	border-bottom: 1px solid var(--chex-line);
+}
+
+.hotel-list h3 {
+	margin: 0 0 0.3rem;
+	font-size: 1.08rem;
+	color: var(--chex-ink);
+}
+
+.hotel-list p,
+.hotel-note {
+	margin: 0;
+	color: var(--chex-muted);
+}
+
+.hotel-note {
+	margin-top: 1.2rem;
+	font-size: 0.92rem;
+}
+
+.last-update {
+	padding: 0.9rem 1rem 0;
+	text-align: center;
+	font-size: 0.78rem;
+	color: #8a8594;
+}
+
+@media screen and (max-width: 640px) {
+	.partner-logo-infn,
+	.partner-logo-inaf {
+		height: 82px;
+		max-width: 260px;
+	}
+
+	.program-accordion summary {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.hotel-list {
+		grid-template-columns: 1fr;
+	}
+
+	.google-form-wrap iframe {
+		min-height: 2350px;
+	}
+}
+
+
+/* v21: deadlines and split logistics */
+.deadline-callout {
+	margin: 0 0 1.4rem;
+	padding: 1rem 1.2rem;
+	border-left: 4px solid var(--chex-purple);
+	background: var(--chex-pale);
+	color: var(--chex-ink);
+	font-size: 1.05rem;
+}
+
+.logistics-tabs-section {
+	padding-top: 2.2rem;
+	padding-bottom: 0;
+}
+
+.hotel-list h3 a {
+	color: var(--chex-ink);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(102,80,216,0.28);
+}
+
+.hotel-list h3 a:hover {
+	color: var(--chex-purple);
+	border-bottom-color: var(--chex-purple);
+}
+
+/* v22 route map */
+.route-map {
+	margin-top: 1.5rem;
+}
+
+.map-route-link {
+	margin: 0.8rem 0 0;
+	text-align: center;
+	font-size: 0.95rem;
+}
+
+.map-route-link a {
+	font-weight: 700;
+}

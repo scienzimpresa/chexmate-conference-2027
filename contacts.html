@@ -12,6 +12,22 @@
 		<meta name="description" content="Contacts for the CHEX-MATE Conference 2027." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/chexmate.css" />
+		<style>
+			.scientific-contact-list { margin-top: 1rem; }
+			.scientific-contact-row {
+				display: grid;
+				grid-template-columns: 1.6rem minmax(0, 1fr);
+				column-gap: 0.85rem;
+				align-items: start;
+				padding: 0.75rem 0;
+			}
+			.scientific-contact-row .icon {
+				margin-top: 0.18rem;
+				text-align: center;
+			}
+			.scientific-contact-name { display: block; font-weight: 700; line-height: 1.25; }
+			.scientific-contact-email { display: block; margin-top: 0.2rem; line-height: 1.35; word-break: break-word; }
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -31,7 +47,13 @@
 								<li><a href="social_dinner.html">Social Dinner</a></li>
 							</ul>
 						</li>
-						<li><a href="logistics.html">Logistics</a></li>
+						<li>
+							<a href="travel.html">Logistics</a>
+							<ul>
+								<li><a href="travel.html">How to get there</a></li>
+								<li><a href="accommodation.html">Where to stay</a></li>
+							</ul>
+						</li>
 						<li class="current"><a href="contacts.html">Contacts</a></li>
 					</ul>
 				</nav>
@@ -49,15 +71,27 @@
 						<h2>Conference organization</h2>
 						<img class="scienzimpresa-logo" src="images/scienzimpresa-logo.png" alt="ScienzImpresa" />
 						<p>To request information on the event, contact <strong>Associazione ScienzImpresa</strong> at:</p>
-						<p class="contact-email"><i class="icon solid fa-envelope"></i> <a href="mailto:conferenze@scienzimpresa.com">conferenze@scienzimpresa.com</a></p>
-						<div class="contact-person"><i class="icon solid fa-user"></i><strong>Alessandro Berlingeri</strong></div>
-						<div class="contact-person"><i class="icon solid fa-user"></i><strong>Grazia Maria Giuliani</strong></div>
+						<p class="contact-email"><i class="icon solid fa-envelope"></i> conferenze [at] scienzimpresa.com</p>
 					</div>
 
 					<div class="contact-block scientific-contacts">
 						<h2>Scientific enquiries</h2>
-						<div class="contact-person"><i class="icon solid fa-user"></i><strong>Iacopo Bartalucci</strong></div>
-						<div class="contact-person"><i class="icon solid fa-user"></i><strong>Stefano Ettori</strong></div>
+						<div class="scientific-contact-list">
+							<div class="scientific-contact-row">
+								<i class="icon solid fa-user" aria-hidden="true"></i>
+								<div>
+									<span class="scientific-contact-name">Iacopo Bartalucci</span>
+									<span class="scientific-contact-email">iacopo.bartalucci [at] uniroma2.it</span>
+								</div>
+							</div>
+							<div class="scientific-contact-row">
+								<i class="icon solid fa-user" aria-hidden="true"></i>
+								<div>
+									<span class="scientific-contact-name">Stefano Ettori</span>
+									<span class="scientific-contact-email">stefano.ettori [at] inaf.it</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -65,18 +99,13 @@
 			<div id="footer" class="chex-footer compact-footer">
 				<div class="container">
 					<div class="row">
-						<section class="col-8 col-12-narrower">
+						<section class="col-12">
 							<h3>CHEX-MATE Conference 2027</h3>
 							<p>14–18 June 2027 · Villa Mondragone, Frascati.</p>
 						</section>
-						<section class="col-4 col-12-narrower footer-links">
-							<h3>CHEX-MATE project</h3>
-							<ul class="links">
-								<li><a href="http://xmm-heritage.oas.inaf.it" target="_blank" rel="noopener noreferrer">CHEX-MATE project website</a></li>
-							</ul>
-						</section>
 					</div>
 				</div>
+				<div class="last-update">Last update on November 20, 2026</div>
 				<div class="copyright">
 					<ul class="menu">
 						<li>CHEX-MATE Conference 2027</li>
